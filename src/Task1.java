@@ -96,6 +96,6 @@ class StudentGradeTracker{
 public class Task1 {
 
     public static void main(String[] args) {
-        StudentGradeTracker myGradeTracker = new StudentGradeTracker();
+        new StudentGradeTracker();
     }
 }
