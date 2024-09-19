@@ -6,11 +6,11 @@ import java.util.Scanner;
 
 class StudentGradeTracker{
 
-    public StudentGradeTracker(){
+    StudentGradeTracker(){
         Scanner sc = new Scanner(System.in);
         ArrayList<Double> grades = new ArrayList<>();
 
-        int numOfStudents = 0;
+        int numOfStudents;
         // Loop until a valid integer is entered for the number of students
         while(true) {
             try {
@@ -72,8 +72,8 @@ class StudentGradeTracker{
         }
 
         //calculate the highest and lowest scores
-        double highest = grades.get(0);
-        double lowest = grades.get(0);
+        double highest = grades.getFirst();
+        double lowest = grades.getFirst();
 
         for(double grade: grades){
             if(grade > highest){
@@ -96,6 +96,6 @@ class StudentGradeTracker{
 public class Task1 {
 
     public static void main(String[] args) {
-        StudentGradeTracker sGT = new StudentGradeTracker();
+        StudentGradeTracker myGradeTracker = new StudentGradeTracker();
     }
 }
