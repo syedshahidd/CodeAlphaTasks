@@ -104,7 +104,6 @@ public class Task2 {
         double initialBalance = sc.nextDouble();
 
         // Create a new BankAccount object, which shows the showMenu() method
-        BankingApp account;
         new BankingApp(name, initialBalance);
     }
 }
